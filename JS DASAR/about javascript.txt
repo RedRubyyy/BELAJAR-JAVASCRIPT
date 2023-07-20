@@ -1,0 +1,11 @@
+JAVASRIPT
+
+=> JavaScript adalah bahasa pemrograman yang menambahkan interaktivitas ke situs web Anda. 
+Ini terjadi dalam game, dalam perilaku respons saat tombol ditekan atau saat memasukkan data
+ke formulir dengan gaya dinamis dengan animasi, dll.
+
+=> JavaScript adalah bahasa pemrograman yang kuat yang dapat menambahkan interaktivitas ke situs web.
+Itu ditemukan oleh Brendan Eich.
+
+
+

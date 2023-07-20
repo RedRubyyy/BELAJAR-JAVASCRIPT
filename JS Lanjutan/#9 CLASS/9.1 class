@@ -1,0 +1,94 @@
+class Professor extends Person
+
+class Professor mewarisi method kelas person 
+
+|| PEWARISAN 
+
+$ CONSTRUCTOR INHERITENCE
+
+function Employee (name) {
+    <<<<<<<< CLONE CODE
+
+    this.name = name,
+    this.sayHello = () => {
+        console.log(`Hello my name is ${this.name} call ${this.fristName}`)
+    }
+
+    >>>>>>>>
+}
+
+function Manager (fristName , name) {
+    this.fristName = fristName;
+    Employee.call(this , name); <= baris code ini seperti mengclone code dari Employee constructor
+    => parameter this adalah function constructor yang ingin di clone Default : this
+}
+
+$ PROTOTYPE INHERITENCE
+
+<<<<<<<<<<< BARIS SALAH
+People.prototype = Employee.prototype
+>>>>>>>>>>>
+People.prototype = Object.create(Employee.prototype) <= benar
+
+Employee.prototype.sayHello = function () {
+    console.log(`hello iam is employee and my name id ${this.name}`)
+}
+<<<<<<<<<< sayHello akan bersi ini KAENA PROTOTYPE Employee tereplace oleh this prototype
+People.prototype.sayHello = function () {
+    console.log(`hello iam is people and my name id ${this.name}`)
+}
+>>>>>>>>>>
+JIKA NAMA PROTOTYPE BEDA TIDAK AKAN TEREPLACE
+
+const andi = new Employee ('andi');
+const budi = new People ('budi')
+andi.sayHello()
+budi.sayHello()
+
+
+|| CLASS 
+
+$ CLASS INHERITENCE 
+class employee{
+    sayHello (name) {
+        console.log(`Hello ${name} , myname is ${this.name} iam employee`)
+    }
+}
+<<<<< extends keyword
+class people extends employee{
+    sayHello (name) {
+        console.log(`Hello ${name} , myname is ${this.name}`)
+    }
+}
+>>>>>
+const konta = new people('konta')
+const kaneki = new employee('kaneki')
+this part => class people mewarisi method dari class employee
+
+$ SUPER METHOD 
+class employee{
+    constructor (fristName) {
+        this.fristName = fristName
+    }
+    parentMethod () {
+        console.info('you call parent object employee')
+    }
+    sayHello (name) {
+        console.log(`Hello ${name} , myname is ${this.lastName} iam employee callme ${this.fristName}`)
+    }
+}
+
+class People extends employee{
+    <<< fristName mengacu pada  constructor employe
+    constructor (fristName , lastName) {
+    >>>>super(fristName);
+        this.lastName = lastName;
+    }
+
+    sayHello (name) {
+        super.parentMethod() <= memakai method dari parent class
+        console.log(`Hello ${name} , my name is ${this.lastName} call me ${this.fristName}`)
+    }
+}
+
+

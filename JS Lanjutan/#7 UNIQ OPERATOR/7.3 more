@@ -1,0 +1,44 @@
+$ IN OPERATOR
+OPERATOR untuk mengecek apakah sebuah property ada di dalam object atau tidak
+=> menghasilkan boolean
+
+EXAMPLE :
+const person = {
+    fristName : 'Monkey',
+    lastName : 'luffy'
+}
+console.log(fristName in person) => true
+
+$ NULLISH OPERATOR
+mengecek menetapkan nilai Default jika nilai undefine atau null 
+
+EXAMPLE :
+const variable = 'EXAMPLE'
+const result = variable ?? 'Default value'
+
+$ OPTIONAL CHANING
+DIGUNAKAN untk mengakses sebuah property object dengan aman 
+
+EXAMPLE :       
+const person = {
+    adress : {
+        region : surabaya
+    }
+}
+const country = person?.adress?.region
+mengembalikan undefine jika person undefine
+
+$ WITH STATEMENT (NOT RECOMENDED) 
+DIGUNAKAN untuk menurunkan sebuah scope
+
+EXAMPLE :
+const person ={
+    fristName : 'anjay',
+    lastName : 'oke'
+}
+
+with (person) {
+    console.log(fristName)
+    console.log(lastName)
+}
+

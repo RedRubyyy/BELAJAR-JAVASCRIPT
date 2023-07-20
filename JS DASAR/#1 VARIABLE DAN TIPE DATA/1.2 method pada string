@@ -1,0 +1,51 @@
+$ charAt(index) Not RECOMENDED || at(index)  NOT RECOMENDED
+=> sringsText.at(index) 
+=> Metode at()mengembalikan karakter yang diindeks dari string.
+=> return stirng
+https://www.w3schools.com/jsref/jsref_string_at.asp
+
+$ charCodeAt(index) || codePointAt(index) RECOMENDED
+=> sringsText.charCodeAt(index) 
+=> Dapatkan Unicode dari index
+=> return number
+https://www.w3schools.com/jsref/jsref_charcodeat.asp
+
+$ concat(string1, string2, ..., stringX)
+=> stringsText.concat(string1, string2, ..., stringX)
+=> Menggabungkan dua atau lebih string
+=> Mengembalikan string baru.
+https://www.w3schools.com/jsref/jsref_concat_string.asp
+
+$ endsWith(searchvalue, length)
+=> stringsText.endsWith(searchvalue, length)
+=> Periksa apakah sebuah string diakhiri dengan "searchvalue"
+=> Kembali true jika sebuah string diakhiri dengan string yang ditentukan.
+https://www.w3schools.com/jsref/jsref_endswith.asp
+
+
+$ fromCharCode(n1, n2, ..., nX)
+=> stringsText.fromCharCode(n1, n2, ..., nX)
+=> Mengonversi nilai Unicode menjadi karakter
+=> return string
+https://www.w3schools.com/jsref/jsref_fromcharcode.asp
+
+
+$ includes(searchvalue, start)
+=> stringsText.includes(searchvalue, start)
+=> Periksa apakah suatu string menyertakan searchvalue
+=> kembali true jika string berisi string tertentu
+https://www.w3schools.com/jsref/jsref_includes.asp
+
+$ indexOf(searchvalue, start)
+=> stringsText.indexOf(searchvalue, start)
+=> mengembalikan posisi kejadian pertama dari sebuah nilai dalam sebuah string
+=> mengembalikan -1 jika nilainya tidak ditemukan.
+https://www.w3schools.com/jsref/jsref_indexof.asp
+
+$ lastIndexOf(searchvalue, start)
+=> stringsText.lastIndexOf(searchvalue, start)
+=> mengembalikan indeks (posisi) dari kejadian terakhir dari nilai yang ditentukan dalam sebuah string.
+=> -1 jika tidak pernah terjadi.
+https://www.w3schools.com/jsref/jsref_lastindexof.asp
+
+$ 

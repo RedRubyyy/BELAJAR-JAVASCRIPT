@@ -1,0 +1,33 @@
+
+$ DEFAULT PARAMETER
+function example (name , hobby = 'Default'){
+    console.log(`hello my name is ${name} my hobby is ${hobby})
+}
+
+$ REST PARAMETER 
+function example (name , ...friends) {
+
+THIS PART => friends adalah array dan parameter yang di tuliskan setelah name adalah bagian array friends
+
+    console.log(`My name is ${name}`)
+    for (const friend of friends) {
+        console.log(friend)
+    }
+}
+
+$ FUNCTION GENERATOR 
+<<< function akan mereturn yield
+function* createProperty () {
+    yield 'chair';
+    yield 'table';
+    yield 'television';
+}
+>>>
+const homePropertys = createProperty()
+=> tidak bisa diakses seperti ini
+homePropertys[0]
+=> benar
+for (const property of homePropertys) {
+    console.log(property)
+}
+SELENGKAPNYA : https://www.youtube.com/watch?v=SDROba_M42g 
